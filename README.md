@@ -2,23 +2,37 @@
 ### Why Docker and Ceph?
 
 ● Stateless containers
+
 ● Stateful data
+
 ● Location independent access
+
 ● Robust access protocols
+
 ● Massively scalable
+
 ● Open source
+
 
 #### Install ansible
 For installing ansible and configuring secret-free login between nodes, this is not covered here. Please refer to Official Documents at https://docs.ansible.com/
 Releases
+
 The following branches should be used depending on your requirements. The stable-* branches have been QE tested and sometimes recieve backport fixes throughout their lifecycle. The master branch should be considered experimental and used with caution.
 
+```
 stable-3.0 Supports Ceph versions jewel and luminous. This branch requires Ansible version 2.4.
+
 stable-3.1 Supports Ceph versions luminous and mimic. This branch requires Ansible version 2.4.
+
 stable-3.2 Supports Ceph versions luminous and mimic. This branch requires Ansible version 2.6.
+
 stable-4.0 Supports Ceph version nautilus. This branch requires Ansible version 2.8.
+
 stable-5.0 Supports Ceph version octopus. This branch requires Ansible version 2.9.
+
 master Supports the master branch of Ceph. This branch requires Ansible version 2.9.
+```
 
 Download ceph-ansible
 ```python
@@ -74,7 +88,8 @@ ip-10-0-0-80.ec2.internal
 ip-10-0-0-80.ec2.internal 
 ```
 
-Start deployment
+#### Start deployment
+
 If the following command fails, the log file defaults to / var/log/ansible.log, you can refer to the error log for processing. (Note: During deployment, docker will be installed by default on each node. This step script does not determine whether the current machine has docker installed. If the target machine has docker installed, there may be errors. The solution is to comment out the corresponding steps to install docker. The corresponding contents are roles/ceph-docker-common/tasks/pre_requisites/pre requisites. Ites.yml.)
 ```python
 ansible-playbook site-docker.yml
