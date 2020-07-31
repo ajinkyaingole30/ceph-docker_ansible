@@ -2,10 +2,15 @@
 ### Why Docker and Ceph?
 
 ● Stateless containers
+
 ● Stateful data
+
 ● Location independent access
+
 ● Robust access protocols
+
 ● Massively scalable
+
 ● Open source
 
 
