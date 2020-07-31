@@ -2,15 +2,10 @@
 ### Why Docker and Ceph?
 
 ● Stateless containers
-
 ● Stateful data
-
 ● Location independent access
-
 ● Robust access protocols
-
 ● Massively scalable
-
 ● Open source
 
 
@@ -22,15 +17,10 @@ The following branches should be used depending on your requirements. The stable
 
 ```
 stable-3.0 Supports Ceph versions jewel and luminous. This branch requires Ansible version 2.4.
-
 stable-3.1 Supports Ceph versions luminous and mimic. This branch requires Ansible version 2.4.
-
 stable-3.2 Supports Ceph versions luminous and mimic. This branch requires Ansible version 2.6.
-
 stable-4.0 Supports Ceph version nautilus. This branch requires Ansible version 2.8.
-
 stable-5.0 Supports Ceph version octopus. This branch requires Ansible version 2.9.
-
 master Supports the master branch of Ceph. This branch requires Ansible version 2.9.
 ```
 
